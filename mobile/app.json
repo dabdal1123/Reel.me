@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "ReelMe Mobile",
+    "slug": "reelme-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "assetBundlePatterns": ["**/*"],
+    "scheme": "reelme",
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}

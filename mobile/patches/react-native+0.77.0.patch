@@ -1,0 +1,20 @@
+*** Begin Patch
+*** Update File: node_modules/react-native/src/private/specs/components/DebuggingOverlayNativeComponent.js
+@@
+-type NativeProps = $ReadOnly<{|
+-  ...ViewProps,
+-  style?: ?$ReadOnlyArray<mixed>,
+-|}>;
++type NativeProps = $ReadOnly<{|
++  ...ViewProps,
++  // Use Array instead of Flow's $ReadOnlyArray to avoid codegen parser issues
++  // when generating native component bindings.
++  style?: ?Array<mixed>,
++|}>;
+ 
+ export type HighlightTraceUpdatesType = $ReadOnly<{|
+-  highlightTraceUpdates: (updates: $ReadOnlyArray<TraceUpdate>) => void,
++  // Using Array prevents Flow-only types from breaking codegen in some setups.
++  highlightTraceUpdates: (updates: Array<TraceUpdate>) => void,
+ |}>;
+*** End Patch

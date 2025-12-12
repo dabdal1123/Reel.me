@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Reel.me",
+    "slug": "reel-me",
+    "version": "0.0.1",
+    "scheme": "reelme",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {"supportsTablet": true},
+    "android": {"adaptiveIcon": {"foregroundImage": "./assets/adaptive-icon.png","backgroundColor": "#0F172A"}},
+    "web": {"bundler": "metro", "output": "static"}
+  }
+}

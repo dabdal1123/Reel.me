@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: '#ddd',
     backgroundColor: '#fff',
-    paddingBottom: 12,
-    paddingTop: 8,
+    paddingTop: 10,
+    paddingBottom: 32,
   },
   tabItem: {
     flex: 1,
